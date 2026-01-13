@@ -1,0 +1,28 @@
+feed:
+  title: "My Whitelisted Feed"
+  description: "Selected updates from whitelisted creators"
+  link: "https://your-username.github.io/your-repo/feed.xml"
+  language: "ja"
+  max_items: 100
+
+sources:
+  # YouTubeチャンネルの例
+  - id: "example_youtube"
+    type: "youtube_channel"
+    display_name: "Example YouTube Channel"
+    enabled: true
+    channel_id: "UCxxxxxxxxxxxxxxxxxxxxxxxx"
+
+  # 汎用RSSの例
+  - id: "example_blog"
+    type: "generic_rss"
+    display_name: "Example Blog"
+    enabled: true
+    rss_url: "https://example.com/feed.xml"
+
+  # 無効化されたソースの例
+  - id: "disabled_source"
+    type: "generic_rss"
+    display_name: "Disabled Source"
+    enabled: false
+    rss_url: "https://example.org/rss"
