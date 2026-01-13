@@ -1,0 +1,31 @@
+feed:
+  title: "My RSS Feed"
+  description: "Selected updates from subscribed sources"
+  link: "https://example.com/feed.xml"
+  language: "ja"
+  max_items: 100
+
+sources:
+  - id: "youtube_channel_1"
+    type: "youtube_channel"
+    display_name: "YouTube Channel 1"
+    enabled: true
+    channel_id: "UC79849JZ6Up4hMgQbZnU3nA"
+
+  - id: "youtube_channel_2"
+    type: "youtube_channel"
+    display_name: "YouTube Channel 2"
+    enabled: true
+    channel_id: "UC8GYDNUBerZnldr8Sj01ngQ"
+
+  - id: "youtube_channel_3"
+    type: "youtube_channel"
+    display_name: "YouTube Channel 3"
+    enabled: true
+    channel_id: "UC3tZp0XuwwDDR2ULUqndTSQ"
+
+  - id: "anthropic_claude_code_changelog"
+    type: "generic_rss"
+    display_name: "Anthropic Claude Code Changelog"
+    enabled: true
+    rss_url: "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_changelog_claude_code.xml"
