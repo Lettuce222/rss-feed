@@ -1,6 +1,9 @@
 name: Build RSS Feed
 
 on:
+  push:
+    branches:
+      - main
   schedule:
     - cron: '0 * * * *'  # 毎時0分に実行
   workflow_dispatch:      # 手動トリガー
